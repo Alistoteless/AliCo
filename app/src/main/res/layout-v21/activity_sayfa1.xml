@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ali.denemeson.sayfa1">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        tools:ignore="UselessParent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp1"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_weight="2.89"
+                    android:background="#cabbbb"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#662a84"
+                    android:textSize="50sp"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageButton
+                    android:id="@+id/infow"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_action_" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp2"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="#cabbbb"
+                android:spinnerMode="dropdown"
+                android:touchscreenBlocksFocus="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+                    android:layout_row="3"
+                    android:layout_rowSpan="2"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:focusable="false"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <EditText
+                    android:id="@+id/dom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/y"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="DOM Giriniz"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="#E0F8E0"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_vertical"
+                    android:text="Elipsoit Seç :  "
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_gravity="right"
+                    android:layout_row="3"
+                    android:layout_weight="0.19"
+                    android:background="#819FF7"
+                    android:gravity="right"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="gravity"
+                    android:textDirection="rtl"
+                    android:verticalScrollbarPosition="right"
+                    android:visibility="visible"
+                    tools:ignore="InefficientWeight,ObsoleteLayoutParam" />
+
+                <ImageButton
+                    android:id="@+id/paro"
+                    android:layout_width="58dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:elevation="0dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/latlong"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rdg"
+                android:layout_width="wrap_content"
+
+
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="4"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:text=" DereceDakikaSaniye "
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHighlight="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorLink="@color/common_google_signin_btn_text_dark_pressed"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text=" Ondalık "
+
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHighlight="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorLink="@color/common_google_signin_btn_text_dark_pressed"
+                    tools:ignore="HardcodedText" />
+
+            </RadioGroup>
+
+            <ImageButton
+                android:id="@+id/btnmap"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.14"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/unnamed"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <LinearLayout
+                android:layout_width="204dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_row="5"
+                android:baselineAligned="false">
+
+                <EditText
+                    android:id="@+id/x2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/y"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/drc"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textIsSelectable="false"
+
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <EditText
+                    android:id="@+id/x"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/y"
+                    android:layout_alignStart="@+id/y"
+                    android:layout_below="@+id/spd"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_row="6"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint=" dk&apos; "
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                <EditText
+                    android:id="@+id/x3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/y"
+                    android:layout_alignStart="@+id/y"
+                    android:layout_below="@+id/spd"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_row="6"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/sn_apos_apos"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textIsSelectable="false"
+
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="208dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_row="6"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/y2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/x"
+                    android:layout_centerHorizontal="true"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="7"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint=" drc° "
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                <EditText
+                    android:id="@+id/y"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/x"
+                    android:layout_centerHorizontal="true"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="7"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/dk_apos"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <EditText
+                    android:id="@+id/y3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/x"
+                    android:layout_centerHorizontal="true"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="7"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint=" sn&apos;&apos; "
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/z"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/y"
+                android:layout_centerHorizontal="true"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_row="10"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Yükseklik Giriniz"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_pressed"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="11"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/z"
+                    android:layout_centerHorizontal="true"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="10"
+                    android:layout_weight="0.60"
+                    android:text="@string/d_n_t_r"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="13"
+                    android:layout_weight="1"
+                    android:text="Seçili Elipsoidi Sil"
+                    tools:ignore="ButtonStyle,ObsoleteLayoutParam" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TEMİZLE" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/so1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_centerHorizontal="true"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_row="14"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/so2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btn"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/btn"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_row="15"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/so3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_row="16"
+                android:gravity="center|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <ImageButton
+                android:id="@+id/btnmap2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="17dp"
+                android:layout_weight="0.14"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/unnamed"
+                tools:ignore="ObsoleteLayoutParam" />
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
